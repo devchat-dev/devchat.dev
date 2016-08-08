@@ -1446,7 +1446,7 @@ var _phoenix = require("phoenix");
 var randy = Math.random().toString();
 let $domain = window.location.host;
 
-var socket = new _phoenix.Socket("ws://127.0.0.1:4000/socket", { params: { user_id: randy } });
+var socket = new _phoenix.Socket("ws://7e4ca7d8.ngrok.io/socket", { params: { user_id: randy } });
 
 socket.connect();
 
