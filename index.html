@@ -143,7 +143,7 @@
  -->  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   <script>
     $(document).ready(function(){
-      var del_url = "http://abdelhai.pythonanywhere.com/members";
+      var del_url = "https://abdelhai.pythonanywhere.com/members";
       $.get(del_url, function(data){
       $('#members').text(data.members)
       $('#online').text(data.online)
@@ -152,7 +152,7 @@
         event.preventDefault();
         em = $('#email').val();
         $.ajax({
-          url: 'http://abdelhai.pythonanywhere.com/invite',
+          url: 'https://abdelhai.pythonanywhere.com/invite',
           data: JSON.stringify({email:em}),
           method: 'POST',
           crossDomain: true,
