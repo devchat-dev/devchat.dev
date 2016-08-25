@@ -154,6 +154,7 @@
         $.ajax({
           url: 'https://abdelhai.pythonanywhere.com/invite',
           data: JSON.stringify({email:em}),
+          contentType: "application/json",
           method: 'POST',
           crossDomain: true,
         }).done(function(data){
