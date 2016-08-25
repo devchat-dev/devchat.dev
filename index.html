@@ -152,7 +152,7 @@
         event.preventDefault();
         em = $('#email').val();
         $.ajax({
-          url: 'http://alldevchat.herokuapp.com/invite',
+          url: 'https://alldevchat.herokuapp.com/invite',
           data: JSON.stringify({email:em}),
           contentType: "application/json",
           method: 'POST',
