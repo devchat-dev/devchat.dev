@@ -142,8 +142,8 @@
 <!--   <script type="text/javascript" src="js/wf.js"></script>
  -->  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
   <script>
-    $(document).ready(function(){
-      var del_url = "https://abdelhai.pythonanywhere.com/members";
+      $(document).ready(function(){
+      var del_url = "https://vss5shpsai.execute-api.us-east-1.amazonaws.com/prod/devchat_members";
       $.get(del_url, function(data){
       $('#members').text(data.members)
       $('#online').text(data.online)
@@ -152,9 +152,8 @@
         event.preventDefault();
         em = $('#email').val();
         $.ajax({
-          url: 'https://alldevchat.herokuapp.com/invite',
+          url: 'https://vss5shpsai.execute-api.us-east-1.amazonaws.com/prod/devchat_invite',
           data: JSON.stringify({email:em}),
-          contentType: "application/json",
           method: 'POST',
           crossDomain: true,
         }).done(function(data){
