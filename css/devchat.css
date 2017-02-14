@@ -15,7 +15,7 @@ a {
   padding-bottom: 200px;
   background-image: -webkit-linear-gradient(225deg, #5c4fc0, #974fc0);
   background-image: linear-gradient(225deg, #5c4fc0, #974fc0);
-  font-family: europa, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 
