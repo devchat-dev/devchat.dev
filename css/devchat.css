@@ -35,9 +35,9 @@ a {
   margin-left: auto;
   border-radius: 90px;
   background-color: #fff;
-  background-image: url('../images/devchat_logo.png');
-  background-position: 17px 50%;
-  background-size: 100px;
+  background-image: url(../images/devchatlogo.svg);
+  background-position: 59% 50%;
+  background-size: 62px;
   background-repeat: no-repeat;
   background-attachment: scroll;
   box-shadow: 0 33px 120px -25px #26183d, 0 5px 22px -9px #00006b;
@@ -173,6 +173,7 @@ a {
 .devolio-logo {
   margin-top: 4px;
   float: left;
+  width: 23px;
 }
 
 .by-devolio {
