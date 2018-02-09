@@ -67,7 +67,7 @@ a {
   padding-bottom: 20px;
   border-style: none;
   border-radius: 2px;
-  background-color: hsla(0, 0%, 100%, .15);
+  background-color: rgba(0, 0, 0, 0.15);
   box-shadow: none;
   color: #fff;
   font-size: 18px;
@@ -78,9 +78,9 @@ a {
 .field:focus {
   border-style: none;
   border-width: 1px;
-  border-color: hsla(0, 0%, 100%, .2);
-  background-color: hsla(0, 0%, 100%, .18);
-  box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .43);
+  border-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, .18);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .43);
 }
 
 .form {
@@ -140,7 +140,7 @@ a {
 
 .status {
   margin-top: 15px;
-  color: hsla(0, 0%, 100%, .53);
+  color: rgba(255, 255, 255, .53);
   text-align: center;
 }
 
@@ -150,14 +150,14 @@ a {
 }
 
 .nr-reg {
-  color: hsla(0, 0%, 100%, .87);
+  color: rgba(255, 255, 255, .87);
   font-weight: 700;
 }
 
 .row {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid hsla(0, 0%, 100%, .34);
+  border-bottom: 1px solid rgba(255, 255, 255, .34);
 }
 
 .powered-by {
@@ -166,7 +166,7 @@ a {
   bottom: 15px;
   padding: 10px;
   border-radius: 2px;
-  background-color: hsla(0, 0%, 100%, .25);
+  background-color: rgba(255, 255, 255, .25);
   box-shadow: 0 11px 28px -21px #0c0061;
 }
 
@@ -187,7 +187,7 @@ a {
 
 .devolio {
   padding-bottom: 2px;
-  border-bottom: 1px solid hsla(0, 0%, 100%, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, .5);
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -207,7 +207,7 @@ a {
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
   color: #f8ef7c;
-  text-shadow: 0 0 0 hsla(55, 85%, 79%, 0);
+  text-shadow: 0 0 0 rgba(247, 239, 156, 0);
 }
 
 .link:hover {
@@ -294,7 +294,7 @@ a {
 
 .coc-link {
   margin-top: 10px;
-  color: hsla(0, 0%, 100%, .68);
+  color: rgba(255, 255, 255, .68);
   font-weight: 300;
   text-align: center;
 }
