@@ -166,8 +166,17 @@ a {
   bottom: 15px;
   padding: 10px;
   border-radius: 2px;
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgb(138, 115, 206);
   box-shadow: 0 11px 28px -21px #0c0061;
+
+}
+
+@supports (-webkit-backdrop-filter: blur(0)) {
+  .powered-by {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .devolio-logo {
@@ -199,8 +208,8 @@ a {
   font-weight: 700;
 }
 
-.text-normal-weight {
-  font-weight: 400;
+.text-bold {
+  font-weight: 600;
 }
 
 .link {
@@ -237,9 +246,7 @@ a {
 .login {
   display: inline-block;
   padding: 5px 9px;
-  opacity: 0.6;
   color: #fff;
-  font-weight: 300;
 }
 
 .login.login-button {
