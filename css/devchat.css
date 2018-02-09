@@ -13,9 +13,9 @@ a {
   min-width: 100%;
   padding-top: 100px;
   padding-bottom: 200px;
-  background-image: -webkit-linear-gradient(225deg, #5c4fc0, #974fc0);
   background-image: linear-gradient(225deg, #5c4fc0, #974fc0);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 400;
 }
 
@@ -40,6 +40,7 @@ a {
   background-size: 62px;
   background-repeat: no-repeat;
   background-attachment: scroll;
+  -webkit-box-shadow: 0 33px 120px -25px #26183d, 0 5px 22px -9px #00006b;
   box-shadow: 0 33px 120px -25px #26183d, 0 5px 22px -9px #00006b;
 }
 
@@ -68,6 +69,7 @@ a {
   border-style: none;
   border-radius: 2px;
   background-color: rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: none;
   box-shadow: none;
   color: #fff;
   font-size: 18px;
@@ -78,9 +80,10 @@ a {
 .field:focus {
   border-style: none;
   border-width: 1px;
-  border-color: rgba(255, 255, 255, .2);
-  background-color: rgba(255, 255, 255, .18);
-  box-shadow: 0 0 0 1px rgba(255, 255, 255, .43);
+  border-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.18);
+  -webkit-box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.43);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.43);
 }
 
 .form {
@@ -97,6 +100,7 @@ a {
   padding-left: 30px;
   border-radius: 2px;
   background-color: #e2d754;
+  -webkit-box-shadow: 0 12px 60px -7px #6f6603;
   box-shadow: 0 12px 60px -7px #6f6603;
   -webkit-transition: all 200ms ease-out;
   transition: all 200ms ease-out;
@@ -107,17 +111,18 @@ a {
 
 .join-button:hover {
   background-color: #f7f09e;
-  box-shadow: 0 7px 50px -9px rgba(216, 200, 6, .65);
+  -webkit-box-shadow: 0 7px 50px -9px rgba(216, 200, 6, 0.65);
+  box-shadow: 0 7px 50px -9px rgba(216, 200, 6, 0.65);
 }
 
 .join-button:active {
-  box-shadow: 0 7px 70px -9px rgba(216, 200, 6, .65);
+  -webkit-box-shadow: 0 7px 70px -9px rgba(216, 200, 6, 0.65);
+  box-shadow: 0 7px 70px -9px rgba(216, 200, 6, 0.65);
   color: #5c5196;
 }
 
 .join-button:focus {
   -webkit-transform: scale(1.03);
-  -ms-transform: scale(1.03);
   transform: scale(1.03);
 }
 
@@ -140,7 +145,7 @@ a {
 
 .status {
   margin-top: 15px;
-  color: rgba(255, 255, 255, .53);
+  color: rgba(255, 255, 255, 0.53);
   text-align: center;
 }
 
@@ -150,14 +155,14 @@ a {
 }
 
 .nr-reg {
-  color: rgba(255, 255, 255, .87);
+  color: rgba(255, 255, 255, 0.87);
   font-weight: 700;
 }
 
 .row {
   padding-top: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, .34);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.34);
 }
 
 .powered-by {
@@ -167,11 +172,11 @@ a {
   padding: 10px;
   border-radius: 2px;
   background-color: rgb(138, 115, 206);
+  -webkit-box-shadow: 0 11px 28px -21px #0c0061;
   box-shadow: 0 11px 28px -21px #0c0061;
-
 }
 
-@supports (-webkit-backdrop-filter: blur(0)) {
+@supports ((-webkit-backdrop-filter: blur(0px)) or (backdrop-filter: blur(0px))) {
   .powered-by {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -196,7 +201,7 @@ a {
 
 .devolio {
   padding-bottom: 2px;
-  border-bottom: 1px solid rgba(255, 255, 255, .5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   color: #fff;
   font-weight: 700;
   text-decoration: none;
@@ -220,7 +225,7 @@ a {
 }
 
 .link:hover {
-  text-shadow: 0 10px 10px rgba(90, 83, 0, .8);
+  text-shadow: 0 10px 10px rgba(90, 83, 0, 0.8);
 }
 
 .login-container {
@@ -284,8 +289,9 @@ a {
 .form-error {
   padding-top: 18px;
   border-radius: 2px;
-  background-color: rgba(221, 79, 34, .25);
-  box-shadow: 0 0 0 6px rgba(223, 72, 52, .72);
+  background-color: rgba(221, 79, 34, 0.25);
+  -webkit-box-shadow: 0 0 0 6px rgba(223, 72, 52, 0.72);
+  box-shadow: 0 0 0 6px rgba(223, 72, 52, 0.72);
   color: #fff;
   font-size: 1.2em;
   text-align: center;
@@ -301,7 +307,7 @@ a {
 
 .coc-link {
   margin-top: 10px;
-  color: rgba(255, 255, 255, .68);
+  color: rgba(255, 255, 255, 0.68);
   font-weight: 300;
   text-align: center;
 }
@@ -337,7 +343,6 @@ a {
   }
   .logo {
     -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
     transform: scale(0.8);
   }
   .h2 {
@@ -375,4 +380,3 @@ a {
     float: right;
   }
 }
-
