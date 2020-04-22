@@ -164,7 +164,7 @@
         if (email.checkValidity()){
           document.getElementById("status").innerHTML = "Patience you must have, my young padawan."
           try{
-            let res = await fetch("https://app.deta.sh/z5x7l1zw8m5u", {
+            let res = await fetch("https://z5x7l1zw8m5u.deta.dev/", {
             method: "POST",
             body: JSON.stringify({email: email.value})
           })
